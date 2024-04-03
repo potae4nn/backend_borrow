@@ -14,13 +14,14 @@ export const databaseProviders = [
     useFactory: async () => {
       const sequelize = new Sequelize({
         dialect: 'mysql',
-        host: 'localhost',
-        port: 3306,
-        username: 'root',
-        password: '',
-        database: 'testnest',
+        host: 'db_mysql',
+        port: 3307,
+        username: "potae",
+        password: "Pass@word1",
+        database: "borrow",
       });
 
+    
       /**
        * Add Models Here
        * ===============
