@@ -16,7 +16,7 @@ export const databaseProviders = [
         dialect: 'mysql',
         host: 'db_mysql',
         port: 3307,
-        username: "potae",
+        username: "root",
         password: "Pass@word1",
         database: "borrow",
       });
