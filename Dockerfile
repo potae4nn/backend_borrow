@@ -4,12 +4,12 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm install
+RUN yarn
 
-RUN npm run build
+RUN yarn build
 
 RUN rm -rf ./src
 
 EXPOSE 3000
 
-CMD [ "npm","run","start:prod" ]
+CMD [ "yarn","start:prod" ]
